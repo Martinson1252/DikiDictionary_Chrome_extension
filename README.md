@@ -1,7 +1,8 @@
 # Diki Dictionary (Chrome extension)
 
-Useful popup-window dictionary, that uses Diki.pl as source for translations.
-
+Useful popup-window dictionary, that uses Diki.pl as source for translations.  
+To search, enter a word into the search engine and press ENTER or click the "Search" button.  
+To clear the search bar, right-click on it.
 # Theme
 Uses both light and dark theme:
 
