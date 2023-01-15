@@ -1,0 +1,204 @@
+
+:root{
+    --input_field_color:rgba(143, 143, 143, 0.56);
+    --selectors_color:rgb(235, 235, 235);
+    --backgroundDark:#222;
+    --backgroundDark2:#262626;
+    --backgroundDark3:#484848;
+    --textWhite:rgb(169, 169, 169);
+    --textDark:black;
+    --inputLight: rgb(239, 239, 239);
+    --dikiRed:rgb(184, 16, 16);
+}
+
+body{
+    background: var(--selectors_color);
+    width: 400px;
+    min-height: 320px;
+    color: var(--textDark);
+}
+
+.searchField{
+    float: left;
+    display: flex;
+    text-align: center;
+    width: auto;
+    height: 90%;
+    border-radius: 7px 0px 0px 7px;
+    font-size: large;
+    padding: 0%;
+    border: 2px solid var(--input_field_color);
+    background-color: var(--inputLight);
+    color: rgb(116, 116, 116);
+}
+.searchField:focus{
+    float: left;
+    display: inline;
+    text-align: center;
+    width: auto;
+    height: 90%;
+    outline-color: rgb(116, 116, 116);
+    outline-width: 2px;
+    /* border-radius: 7px 0px 0px 7px; */
+    background: var(--inputLight);
+    /* padding: 0%; */
+    font-size: large;
+}
+
+.searchButton{
+    float: left;
+    width: auto;
+    height: 100%;
+    background-color: var(--dikiRed);
+    color: white;
+    border-radius: 0px 7px 7px 0px;
+    border: 0px;
+    font-size: large;
+    font-family: 'Readex Pro', sans-serif;
+}
+
+.searchButton:hover{
+    float: left;
+    display: inline;
+    /* width: 30%; */
+    height: 100%;
+    background-color: rgb(135, 31, 31);
+    color: white;
+    cursor:pointer;
+    border-radius: 0px 7px 7px 0px;
+    font-size: large;
+    border: 0px;
+}
+
+
+
+.themeList{
+    position: fixed;
+}
+
+.optionList{
+    position: relative;
+    background: var(--selectors_color);
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+    border-top:    0px solid  rgb(209, 209, 209);
+    border-bottom: 0px solid rgb(209, 209, 209);
+    color: var(--textDark);
+}
+
+
+.checkbox_selector{
+    display: none;
+}
+.checkbox_selector:checked + .label_selector{
+    border-bottom: 2px solid rgb(195, 4, 7);
+}
+
+.label_selector{
+    color: var(--textDark);
+    padding: 5px 10px;
+    display: flex;
+    background: var(--selectors_color);
+    cursor: pointer;
+    width: 100%;
+    justify-content: center;
+    border-bottom: 2px solid var(--selectors_color);
+}
+.label_selector:hover{
+    color: var(--textDark);
+    background: var(--selectors_color);
+    padding: 5px 10px;
+    display: flex;
+    cursor: pointer;
+    width: 100%;
+    justify-content: center;
+    border-bottom: 2px solid rgb(195, 4, 7);
+}
+
+.placeholder{
+    height: 40px;
+    overflow: visible;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background: var(--selectors_color);
+}
+
+::placeholder{
+    color: var(--input_field_color)
+}
+
+span{
+    color: var(--textDark);
+    font-weight: bold;
+}
+
+img.absmiddle.refIcon{
+    visibility:collapse;
+    width: 0;
+    height: 0;
+}
+
+img.pict{
+    visibility: collapse;
+    width: 0;
+    height: 0;
+}
+
+.eTutorPromotionalLink{
+    visibility: collapse;
+    width: 0;
+    height: 0;
+}
+
+.messageIcon.doNotScaleImage{
+    visibility: collapse;
+    width: 0;
+    height: 0;
+}
+
+#content{
+    max-height: 350px;
+    margin-top: 58px;
+}
+
+.toolbar{
+    /* position: -webkit-sticky; */
+    /* position: sticky; */
+    position: fixed;
+    width: 96%;
+    top: 0px;
+    background-color: var(--selectors_color);
+}
+.top
+{
+    height: 3px;;
+    background: var(--selectors_color);
+}
+
+/* ::-webkit-scrollbar {
+    background: #262626; 
+  }
+  
+::-webkit-scrollbar-thumb{
+    background: var(--selectors_color);
+} */
+
+::selection {
+    color: rgb(255, 255, 255);
+    background: var(--dikiRed);
+  }
+  
+
+
+.spann{
+        background:none;
+        border:none;
+        margin:0;
+        padding:0;
+        cursor: pointer;
+        text-decoration: underline;
+        font-weight: bold;
+        color: var(--textDark);
+}

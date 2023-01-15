@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+</head>
+  <body style="width: 400px; min-height:320px;">
+  <link id="link" rel="stylesheet" >
+  <div class="toolbar">
+    <div class="top"></div>
+  <div class="placeholder">
+    <input id="searchBox" type="text" class="searchField" placeholder="Wpisz słówko">
+    <button type="button" id="GoSearch" class="searchButton">Wyszukaj</button>
+    
+  </div>
+  <div class="optionList">
+    <input type="radio" name="lang" class="checkbox_selector" id="angielski"><label for="angielski" class="label_selector">angielski</label>
+    <input type="radio" name="lang" class="checkbox_selector" id="niemiecki"><label for="niemiecki" class="label_selector">niemiecki</label>
+    <input type="radio" name="lang" class="checkbox_selector" id="hiszpanski"><label for="hiszpanski" class="label_selector">hiszpański</label>
+    <input type="radio" name="lang" class="checkbox_selector" id="francuski"><label for="francuski" class="label_selector">francuski</label>
+    <input type="radio" name="lang" class="checkbox_selector" id="wloski"><label for="wloski" class="label_selector">włoski</label><label>
+    </div>
+  </div>
+  <iframe id="myframe" width="0" height="0">
+    
+  </iframe>
+  <div id="content"></div>
+  <script src="backend.js"></script>
+  </body>
+</html>
