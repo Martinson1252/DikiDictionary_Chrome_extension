@@ -1,7 +1,7 @@
 # Diki Dictionary (Chrome extension)
 
 Useful popup-window dictionary, that uses Diki.pl as source for translations.  
-Supported languages are: English, German, French, Spanish, Italian and Polish.    
+Supported languages are: English, German, Spanish, French, Italian and Polish.    
 Dictionary translates from Polish->(one of 5 languages) and in reverse; with no need to set up translation direction.  
 To search, enter a word into the search engine and press ENTER or click the "Search" button.  
 To clear the search bar, right-click on it.
