@@ -3,7 +3,7 @@
 Useful popup-window dictionary, that uses Diki.pl as source for translations.  
 Supported languages are: English, German, Spanish, French, Italian.    
 Dictionary translates from Polish->(one of these 5 languages) and in reverse; with no need to set up translation direction.  
-To search, enter a word into the search engine and press ENTER or click the "Search" button.  
+To search, enter a word into the search bar and press ENTER or click the "Search" button.  
 To clear the search bar, right-click on it.
 # Theme
 Uses both light and dark theme:
