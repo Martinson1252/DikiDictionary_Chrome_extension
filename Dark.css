@@ -201,3 +201,17 @@ img.pict{
     font-weight: bold;
     color: var(--textWhite);
 }
+
+
+.additionalSentences{
+    overflow: hidden;
+    height: 0px;
+}
+
+.showHideButton{
+    border-style: none;
+    border-radius: 7px;
+    cursor: pointer;
+    background-color: #484848;
+    color: rgb(149, 149, 149);
+}

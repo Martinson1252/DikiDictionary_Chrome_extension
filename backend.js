@@ -27,7 +27,9 @@
         fetch(language_src+input.value).then ( response =>{
             return response.text();
         }).then(function (html){
-            html = html.substring(html.indexOf("dikiBackgroundBannerPlaceholder\">")+"dikiBackgroundBannerPlaceholder\">".length,html.indexOf("<p>powered by&nbsp;&nbsp;")).replace(/<a/g,"<button class=\"spann\"").replace(/<\/a/g,"</button");
+            html = html.substring(html.indexOf("dikiBackgroundBannerPlaceholder\">")+"dikiBackgroundBannerPlaceholder\">".length,html.indexOf("<p>powered by&nbsp;&nbsp;"))
+            .replace(/<a/g,"<button class=\"spann\"").replace(/<\/a/g,"</button")
+            .replaceAll("<div class=\"additionalSentences\""," <button class=\"showHideButton\" type=\"button\">Pokaż/Ukryj przykłady</button> <div class=\"additionalSentences\"");
             content.innerHTML = html;
             setTimeout(function() {
                 input.focus();
@@ -37,6 +39,10 @@
                 if(temp=="" || temp.includes("*")){
                  i.style.cursor = "default";
                 }else i.onclick = function() {GOSEARCH(temp); };
+            })
+            document.querySelectorAll(".showHideButton").forEach( (i) => {
+                
+                 i.onclick = function() {Show_HideExamples(); };
             })
         }).catch(function (err) {
            content.innerHTML = language_src+input.value;
@@ -111,6 +117,24 @@
     //  function GOSEARCH(){
     //     back.src = language_src+input.value;
     // }
+    
+    function Show_HideExamples(){
+        console.log("Show!!");
+        var temp = document.querySelectorAll(".additionalSentences");
+        temp.forEach(element => {
+            console.log(element.style.overflow);
+           if (element.style.overflow!="visible")
+        {
+            element.style.overflow="visible";
+            element.style.height="auto";
+        }else{
+            element.style.overflow="hidden";
+            element.style.height="0px"; 
+        } 
+        });
+        
+    }
+    
     
     document.getElementById("angielski").onclick =  ()=>{
     language_src = "https://www.diki.pl/slownik-angielskiego?q=";
