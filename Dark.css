@@ -1,12 +1,17 @@
 
 :root{
-    --input_field_color:rgba(143, 143, 143, 0.56);
+    --input_field_color:rgba(39, 39, 39);
+    --input_field_focus_color:rgba(51, 51, 51, 0.56);
     --selectors_color:rgb(235, 235, 235);
     --backgroundDark:#222;
     --backgroundDark2:#262626;
     --backgroundDark3:#484848;
     --textWhite:rgb(169, 169, 169);
     --dikiRed:rgb(184, 16, 16);
+    --dikiSButton:rgb(39, 39, 39);
+    --fillSVG:rgb(229, 46, 46);
+    --PlaceholderTextFo:rgb(166, 166, 166);
+    --PlaceholderText:rgb(129, 129, 129);
 }
 
 body{
@@ -22,11 +27,11 @@ body{
     text-align: center;
     width: auto;
     height: 90%;
-    border-radius: 7px 0px 0px 7px;
+    border-radius: 2px 0px 0px 2px;
     font-size: large;
     padding: 0%;
-    border: 2px solid var(--backgroundDark3);
-    background-color: var(--backgroundDark);
+    border: 0px solid var(--backgroundDark3);
+    background-color: var(--input_field_color);
     color: var(--textWhite);
 }
 .searchField:focus{
@@ -37,34 +42,51 @@ body{
     height: 90%;
     outline-color: var(--input_field_color);
     outline-style: solid;
-    outline-width: 1px;
+    outline-width: 0px;
     /* border-radius: 7px 0px 0px 7px; */
-    background: var(--backgroundDark);
+    background: var(--input_field_focus_color);
     /* padding: 0%; */
     font-size: large;
 }
 
+.searchField:focus::placeholder{
+    color:var(--PlaceholderTextFo);
+}
+.searchField::placeholder{
+    color:var(--PlaceholderText);
+}
+
 .searchButton{
     float: left;
-    width: auto;
-    height: 100%;
-    background-color: var(--dikiRed); /*rgb(195, 4, 7); */
+    min-width: 30pt;
+    height: 90%;
+    background-color: var(--dikiSButton); /*rgb(195, 4, 7); */
     color: white;
-    border-radius: 0px 7px 7px 0px;
+    border-radius: 0px 2px 2px 0px;
     border: 0px;
-    font-size: large;
+    font-size: medium;
     font-family: 'Readex Pro', sans-serif;
+}
+
+.srchico{
+    fill: var(--fillSVG) !important;
+    width: fit-content;
+    height: fit-content;
+}
+
+.searchIco{
+    fill: aqua !important;
 }
 
 .searchButton:hover{
     float: left;
     display: inline;
     /* width: 30%; */
-    height: 100%;
+    height: 90%;
     background-color: rgb(135, 31, 31);
     color: white;
     cursor:pointer;
-    border-radius: 0px 7px 7px 0px;
+    border-radius: 0px 2px 2px 0px;
     font-size: large;
     border: 0px;
 }

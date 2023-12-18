@@ -9,7 +9,7 @@
     // fetch("welcome.html")
     // .then(response => response.text())
     // .then(text=> content.innerHTML=text);
-    content.innerHTML = "<h1>Witaj w wielojęzycznym słowniku Diki!</h1> <h3>By wyszukać, wpisz słówko do wyszukiwarki i naciśnij ENTER lub kliknij przycisk \"Wyszukaj\".</h3> <h3>Aby wyczyścić pasek wyszukiwania kliknij na niego prawym przyciskiem myszy.</h3>Motyw: <select id=\"themeSet\" style=\"background:#484848; color:white;\"><option value=\"Light\">Jasny</option><option value=\"Dark\">Ciemny</option></select> </h3>&nbsp;&nbsp;&nbsp;Lektor: <select id=\"lector\" style=\"background:#484848; color:white;\"><option value=\"off\">wyłączony</option><option value=\"on\">włączony</option></select>";
+    content.innerHTML = "<h1>Witaj w wielojęzycznym słowniku Diki!</h1> <h3>By wyszukać, wpisz słówko do wyszukiwarki i naciśnij ENTER lub kliknij przycisk \"Wyszukaj\".</h3> <h3>Aby wyczyścić pasek wyszukiwania kliknij na niego prawym przyciskiem myszy.</h3>Motyw: <select id=\"themeSet\" style=\"background:#484848; color:white;\"><option value=\"Dark\">Ciemny</option><option value=\"Light\">Jasny</option></select> </h3>&nbsp;&nbsp;&nbsp;Lektor: <select id=\"lector\" style=\"background:#484848; color:white;\"><option value=\"off\">wyłączony</option><option value=\"on\">włączony</option></select>";
     Searchbutton.onclick = function() { GOSEARCH(); }
     var themeL = document.getElementById("themeSet");
     var lector = document.getElementById("lector");
@@ -27,10 +27,25 @@
         fetch(language_src+input.value).then ( response =>{
             return response.text();
         }).then(function (html){
-            html = html.substring(html.indexOf("dikiBackgroundBannerPlaceholder\">")+"dikiBackgroundBannerPlaceholder\">".length,html.indexOf("<p>powered by&nbsp;&nbsp;"))
-            .replace(/<a/g,"<button class=\"spann\"").replace(/<\/a/g,"</button")
-            .replaceAll("<div class=\"additionalSentences\""," <button class=\"showHideButton\" type=\"button\">Pokaż/Ukryj przykłady</button> <div class=\"additionalSentences\"");
+            //diki-results-container
+            //"eTutorPromotionalLink\">"
+            console.log(html.indexOf("dictionarySuggestions\""))
+            
+            if(html.indexOf("dictionarySuggestions\"")==-1){
+                
+                html = html.substring(html.indexOf("dikiBackgroundBannerPlaceholder\">")+"dikiBackgroundBannerPlaceholder\">".length,html.indexOf("eTutorPromotionalLink\">"))
+                .replace(/<a/g,"<button class=\"spann\"").replace(/<\/a/g,"</button")
+                .replaceAll("<div class=\"additionalSentences\""," <button class=\"showHideButton\" type=\"button\">Pokaż/Ukryj przykłady</button> <div class=\"additionalSentences\""); 
+            }else{
+                html = html.substring(html.indexOf("dikiBackgroundBannerPlaceholder\">")+"dikiBackgroundBannerPlaceholder\">".length,html.indexOf("absmiddle flag\""))
+                .replace(/<a/g,"<button class=\"spann\"").replace(/<\/a/g,"</button")
+                .replaceAll("<div class=\"additionalSentences\""," <button class=\"showHideButton\" type=\"button\">Pokaż/Ukryj przykłady</button> <div class=\"additionalSentences\""); 
+            }
             content.innerHTML = html;
+            // html = html.substring(html.indexOf("dikiBackgroundBannerPlaceholder\">")+"dikiBackgroundBannerPlaceholder\">".length,html.indexOf("<p>powered by&nbsp;&nbsp;"))
+            // .replace(/<a/g,"<button class=\"spann\"").replace(/<\/a/g,"</button")
+            // .replaceAll("<div class=\"additionalSentences\""," <button class=\"showHideButton\" type=\"button\">Pokaż/Ukryj przykłady</button> <div class=\"additionalSentences\"");
+            // content.innerHTML = html;
             setTimeout(function() {
                 input.focus();
             }, 500);
@@ -65,9 +80,9 @@
            themeL.value = the;
            link.href = the+".css";
         }else{
-            chrome.storage.local.set({ theme: "Light" });
+            chrome.storage.local.set({ theme: "Dark" });
             console.log("NO STORAGE");
-            link.href = "Light.css";
+            link.href = "Dark.css";
         }
     });
     }
