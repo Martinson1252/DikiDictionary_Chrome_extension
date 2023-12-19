@@ -9,8 +9,9 @@ To clear the search bar, right-click on it.
 Uses both light and dark theme:
 
 - Light: <p align="center" width="100%">
-    ![z2](https://github.com/Martinson1252/DikiDictionary_Chrome_extension/assets/39278140/54894dfb-8e51-4253-9a5c-19cb51e57261)
+    ![z2](https://github.com/Martinson1252/DikiDictionary_Chrome_extension/assets/39278140/54894dfb-8e51-4253-9a5c-19cb51e57261)    
     ![z222](https://github.com/Martinson1252/DikiDictionary_Chrome_extension/assets/39278140/ec0fca20-522d-4b1b-9768-affb927bfe67)
+
 </p>
 
 - Dark: <p align="center" width="100%">
