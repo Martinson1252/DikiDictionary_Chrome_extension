@@ -10,17 +10,23 @@ Uses both light and dark theme:
 
 - Light: <p align="center" width="100%">
     ![z2](https://github.com/Martinson1252/DikiDictionary_Chrome_extension/assets/39278140/54894dfb-8e51-4253-9a5c-19cb51e57261)
-</p>
+        </p> 
+    <p align="center" width="100%">
 
-<p align="center" width="100%">
-![z222](https://github.com/Martinson1252/DikiDictionary_Chrome_extension/assets/39278140/135876bc-374e-468e-845a-ec8a51fc7d71)
+    ![z222](https://github.com/Martinson1252/DikiDictionary_Chrome_extension/assets/39278140/ec0fca20-522d-4b1b-9768-affb927bfe67)
 </p>
 
 - Dark: <p align="center" width="100%">
-</p>![z1](https://github.com/Martinson1252/DikiDictionary_Chrome_extension/assets/39278140/8e201b7f-8fdb-4fcf-a5ba-5ca8d767183c)
+    ![z1](https://github.com/Martinson1252/DikiDictionary_Chrome_extension/assets/39278140/ef46af9a-ebfd-4599-a2e4-204dcb66efda)
+  </p>
+
+
 <p align="center" width="100%">
-    ![z111](https://github.com/Martinson1252/DikiDictionary_Chrome_extension/assets/39278140/2922fd4a-5261-4f27-9847-6258d4c0ff75)
+![z111](https://github.com/Martinson1252/DikiDictionary_Chrome_extension/assets/39278140/00797cf1-0269-421d-89eb-2190f693386a)
 </p>
+    
+ 
+
+
   
-</p>
 
