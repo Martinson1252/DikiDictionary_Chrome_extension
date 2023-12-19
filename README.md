@@ -9,19 +9,17 @@ To clear the search bar, right-click on it.
 Uses both light and dark theme:
 
 - Light: <p align="center" width="100%">
-    <img width="60%" src="https://user-images.githubusercontent.com/39278140/212560197-ded34054-c83b-44fa-8568-2c33fb044e65.png">
-</p>
-
-<p align="center" width="100%">
-    <img width="100%" src="https://user-images.githubusercontent.com/39278140/212560219-880b9d1f-5f8d-40d7-a1fb-2a3a7ca59503.png"> 
+    ![z2](https://github.com/Martinson1252/DikiDictionary_Chrome_extension/assets/39278140/54894dfb-8e51-4253-9a5c-19cb51e57261)
+    ![z222](https://github.com/Martinson1252/DikiDictionary_Chrome_extension/assets/39278140/ec0fca20-522d-4b1b-9768-affb927bfe67)
 </p>
 
 - Dark: <p align="center" width="100%">
-    <img width="60%" src="https://user-images.githubusercontent.com/39278140/212560225-f8b6e969-1b4e-4326-9b27-e5aba9c90410.png">
+    ![z1](https://github.com/Martinson1252/DikiDictionary_Chrome_extension/assets/39278140/ef46af9a-ebfd-4599-a2e4-204dcb66efda)
+![z111](https://github.com/Martinson1252/DikiDictionary_Chrome_extension/assets/39278140/00797cf1-0269-421d-89eb-2190f693386a)
 </p>
-<p align="center" width="100%">
-    <img width="100%" src="https://user-images.githubusercontent.com/39278140/212560227-6818de2c-1fad-4653-85ef-a5ac42398eaa.png"> 
-</p>
+    
+ 
+
+
   
-</p>
 
