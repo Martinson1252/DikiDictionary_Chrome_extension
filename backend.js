@@ -31,16 +31,24 @@
             //"eTutorPromotionalLink\">"
             console.log(html.indexOf("dictionarySuggestions\""))
             
-            if(html.indexOf("dictionarySuggestions\"")==-1){
+            // if(html.indexOf("dictionarySuggestions\"")==-1)
+            {
                 
-                html = html.substring(html.indexOf("dikiBackgroundBannerPlaceholder\">")+"dikiBackgroundBannerPlaceholder\">".length,html.indexOf("eTutorPromotionalLink\">"))
+                html = html.substring(html.indexOf("dikiBackgroundBannerPlaceholder\">")+"dikiBackgroundBannerPlaceholder\">".length,html.indexOf("<div class=\"clear\">"))
                 .replace(/<a/g,"<button class=\"spann\"").replace(/<\/a/g,"</button")
                 .replaceAll("<div class=\"additionalSentences\""," <button class=\"showHideButton\" type=\"button\">Pokaż/Ukryj przykłady</button> <div class=\"additionalSentences\""); 
-            }else{
-                html = html.substring(html.indexOf("dikiBackgroundBannerPlaceholder\">")+"dikiBackgroundBannerPlaceholder\">".length,html.indexOf("absmiddle flag\""))
-                .replace(/<a/g,"<button class=\"spann\"").replace(/<\/a/g,"</button")
-                .replaceAll("<div class=\"additionalSentences\""," <button class=\"showHideButton\" type=\"button\">Pokaż/Ukryj przykłady</button> <div class=\"additionalSentences\""); 
+                //eTutorPromotionalLink
+                //<footer>
             }
+            
+            // else{
+            //     html = html.substring(html.indexOf("dikiBackgroundBannerPlaceholder\">")+"dikiBackgroundBannerPlaceholder\">".length,html.indexOf("<footer>"))
+            //     .replace(/<a/g,"<button class=\"spann\"").replace(/<\/a/g,"</button")
+            //     .replaceAll("<div class=\"additionalSentences\""," <button class=\"showHideButton\" type=\"button\">Pokaż/Ukryj przykłady</button> <div class=\"additionalSentences\""); 
+            //     //absmiddle flag
+            // }
+            
+            
             content.innerHTML = html;
             // html = html.substring(html.indexOf("dikiBackgroundBannerPlaceholder\">")+"dikiBackgroundBannerPlaceholder\">".length,html.indexOf("<p>powered by&nbsp;&nbsp;"))
             // .replace(/<a/g,"<button class=\"spann\"").replace(/<\/a/g,"</button")
