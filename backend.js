@@ -34,7 +34,7 @@
             // if(html.indexOf("dictionarySuggestions\"")==-1)
             {
                 
-                html = html.substring(html.indexOf("dikiBackgroundBannerPlaceholder\">")+"dikiBackgroundBannerPlaceholder\">".length,html.indexOf("<div class=\"clear\">"))
+                html = html.substring(html.indexOf("id=\"contentWrapper\">")+"id=\"contentWrapper\">".length,html.indexOf("<div class=\"clear\">"))
                 .replace(/<a/g,"<button class=\"spann\"").replace(/<\/a/g,"</button")
                 .replaceAll("<div class=\"additionalSentences\""," <button class=\"showHideButton\" type=\"button\">Pokaż/Ukryj przykłady</button> <div class=\"additionalSentences\""); 
                 //eTutorPromotionalLink
