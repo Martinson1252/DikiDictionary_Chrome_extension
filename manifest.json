@@ -1,6 +1,6 @@
 {
   "name": "Diki słownik",
-  "version": "0.0.2.15",
+  "version": "0.0.2.16",
   "manifest_version": 3,
   "description":"Wielojęzyczny słownik Diki otwierany w podręcznym oknie.",
   "host_permissions" : [
