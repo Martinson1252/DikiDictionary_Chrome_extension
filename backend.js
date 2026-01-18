@@ -37,7 +37,7 @@
             // if(html.indexOf("dictionarySuggestions\"")==-1)
             {
                 //searches of the first instances of string and adds the same string to prevent from outputting string in window
-                html = html.substring(html.indexOf("class=\"dikiContainer\">")+("class=\"dikiContainer\">").length,html.indexOf("class=\"siteFooter"))
+                html = html.substring(html.indexOf("class=\"dikiContainer\">")+("class=\"dikiContainer\">").length,html.lastIndexOf("class=\"siteFooter"))
                 .replace(/<a/g,"<button class=\"spann\"").replace(/<\/a/g,"</button")
                 .replaceAll("<div class=\"additionalSentences\""," <button class=\"showHideButton\" type=\"button\">Pokaż/Ukryj przykłady</button> <div class=\"additionalSentences\""); 
                 //eTutorPromotionalLink
